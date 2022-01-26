@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>Kelompok 2</title>
+       
+    <style>
+       *{
+          padding: 0px;
+          margin: 0px;
+      }
+
+      main {
+        position: relative;
+        width: 1000px;
+        height: auto;
+        /*background-color: #efefef;*/
+        margin: 50px auto;
+      }
+
+      .baris {
+        position: relative;
+        width: 100%;
+        height: 60px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        /*background-color: #ddd;*/
+      }
+
+      .halfcol {
+        position: relative;
+        width: 45%;
+        height: 100%;
+        margin-right: 5%;
+        /*background-color: #ccc;   */
+        float: left;
+      }
+
+      .fullwidthcontent {
+        position: relative;
+        width: 100%;
+        height: 100%;
+       /* background-color:red; */  
+      }
+
+      .baris:nth-child(1) .halfcol:nth-child(1) {
+          background-color: grey;
+      }
+
+      .halfwidthcontent {
+        position: relative;
+        width: calc(50% - 5px);
+        height: 100%;
+        margin-right: 5px;
+        /* background-color: green;   */
+        float: left;
+      }
+
+      .halfwidthcontenttinggi {
+        position: relative;
+        width: calc(50% - 5px);
+        height: 200%;
+        margin-right: 5px;
+       /* background-color: green;   */
+        float: left;
+      }
+
+      .onefifthwidthcontent {
+        position: relative;
+        width: calc(19% - 5px);
+        height: 100%;
+       /* background-color: gray; */
+        float: left;
+      }
+      .baris:nth-child(2) .halfcol:nth-child(1) .onefifthwidthcontent {
+          background-color: gray;
+          border: 2px solid black;
+      }
+      .baris:nth-child(3) .halfcol:nth-child(1) .onefifthwidthcontent {
+          border: 2px solid black;
+      }
+
+      .threefifthwidthcontent {
+        position: relative;
+        width: calc(60% - 5px);
+        height: 100%;
+       /* background-color: green;   */
+        float: left;
+      }
+
+      .baris:nth-child(2) .halfcol:nth-child(1) .threefifthwidthcontent {
+          background-color: gray;
+          border-top: 2px solid black;
+          border-bottom: 2px solid black;
+        }
+        .baris:nth-child(3) .halfcol:nth-child(1) .threefifthwidthcontent {
+          border-top: 2px solid black;
+          border-bottom: 2px solid black;
+        }
+
+      .halfwidthcontenttinggi {
+        position: relative;
+        width: calc(50% - 5px);
+        height: 200%;
+        margin-right: 5px;
+       /* background-color: green;  */
+        float: left;
+      }
+
+      .fullwidthcontenttinggi {
+        position: relative;
+        width: 100%;
+        height: 600%;
+        padding-top: 20px;
+        box-sizing: border-box;
+        /* background-color:red;   */
+      }
+
+      .blank {
+        position: relative;  
+        width: 50%;
+        height: 100%;
+        float: left;
+      }
+
+      h1 {
+          position: relative;
+          text-align: right;
+          float: right;
+          font-size: 100px;
+          font-family: Verdana, sans-serif;
+          margin-right: 10px;
+      }
+
+      h2 {
+          position: relative;
+          text-align: left;
+          float: left;
+          font-size: 30px;
+          font-family: Verdana, sans-serif;
+          margin-left: 10px;
+      }
+      .baris:nth-child(4) .halfcol:nth-child(1) .halfwidthcontent h2:nth-child(1){
+          color: green;
+      }
+
+      hr {
+          width: 200%;
+          height: 5px;
+          background-color: green;
+          border: 0 none;
+          margin-bottom: 100px;
+         }
+      .baris:nth-child(5) .halfcol:nth-child(2) .fullwidthcontent hr {
+          background-color: gray;
+          width: 100%;
+      }
+      
+
+      h3 {
+          position: relative;
+          text-align: left;
+          float: left;
+          font-size: 25px;
+          font-family: Verdana, sans-serif;
+          margin-left: 10px; 
+          padding: 5px;
+      }
+
+      .baris:nth-child(1) .halfcol:nth-child(2) .halfwidthcontent:nth-child(1) h3:nth-child(1) {
+        text-align: right;
+        float: right;
+      }
+
+      h4 {
+          position: relative;
+          text-align: left;
+          float: left;
+          font-size: 20px;
+          font-family: Verdana, sans-serif;
+          margin-left: 10px; 
+      }
+
+      h5 {
+          position: relative;
+          text-align: left;
+          font-size: 14px;
+          font-family: Verdana, sans-serif;
+          margin-left: 10px; 
+      }
+      .baris:nth-child(4) .halfcol:nth-child(2) .halfwidthcontent:nth-child(2) h5:nth-child(1) {
+        background-color: rgb(219, 198, 219);
+        border-radius: 20px;
+        padding: 10px;
+        box-sizing: content-box;
+      }
+
+      h6 {
+          position: relative;
+          text-align: left;
+          font-size: 12px;
+          font-family: Verdana, sans-serif;
+          margin-left: 10px; 
+          text-indent: 10px;
+      }
+    .baris:nth-child(5) .halfcol:nth-child(1) .fullwidthcontenttinggi h6:nth-child(1){
+          text-indent: 0px;
+          color: green;
+    }
+    .baris:nth-child(5) .halfcol:nth-child(1) .fullwidthcontenttinggi h6:nth-child(4){
+        color: green;
+    }
+    .baris:nth-child(5) .halfcol:nth-child(1) .fullwidthcontenttinggi h6:nth-child(6){
+          text-indent: 0px;
+          padding-top: 10px;
+          color: green;
+    }
+    .baris:nth-child(5) .halfcol:nth-child(1) .fullwidthcontenttinggi h6:nth-child(11){
+          text-indent: 0px;
+          padding-top: 10px;
+          color: green;
+    }
+    .baris:nth-child(5) .halfcol:nth-child(1) .fullwidthcontenttinggi h6:nth-child(n+11){
+          text-indent: 0px;
+    }
+    .baris:nth-child(5) .halfcol:nth-child(1) .fullwidthcontenttinggi h6:nth-child(14){
+          text-indent: 0px;
+          padding-top: 10px;
+          color: green;
+    }
+    </style>
+  </head>
+
+ <body>
+    <main>
+        <div class="baris">
+            <div class="halfcol">
+                <div class="fullwidthcontent">
+                    <h3>Stand Departure Information</h3>
+                </div>
+            </div>
+            <div class="halfcol">
+              <div class="halfwidthcontent"></div>
+              <div class="halfwidthcontent">
+                  <h3>Bus Timeline</h3>
+              </div>
+            </div>  
+        </div>
+
+        <div class="baris">
+            <div class="halfcol">
+                <div class="onefifthwidthcontent">
+                    <h5>Route No.</h5>
+                </div>
+                <div class="threefifthwidthcontent">
+                    <h5>Location</h5>
+                </div>
+                <div class="onefifthwidthcontent">
+                    <h5>Stand</h5>
+                </div>
+            </div>
+            <div class="halfcol">
+                <div class="halfwidthcontenttinggi"></div>
+                <div class="halfwidthcontenttinggi">
+                    <h1>42</h1>
+                </div>
+            </div>  
+        </div>
+
+        <div class="baris">
+            <div class="halfcol">
+                <div class="onefifthwidthcontent">
+                    <h5>81, 82, 83, 84, 85</h5>
+                </div>
+                <div class="threefifthwidthcontent">
+                    <h5>Perth Busport</h5>
+                </div>
+                <div class="onefifthwidthcontent">
+                    <h5>9-12</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="baris">
+            <div class="halfcol">
+                <div class="halfwidthcontent">
+                    <h2>Transperth Information</h2>
+                    <hr>
+                </div>
+                <div class="halfwidthcontent"></div>
+            </div>
+            <div class="halfcol">
+              <div class="halfwidthcontent"></div>
+              <div class="halfwidthcontent">
+                  <h5>For full service details for
+                  these routes, refer to
+                  Timetable 43.</h5>
+              </div>
+            </div>  
+        </div>
+
+        <div class="baris">
+            <div class="halfcol">
+                <div class="fullwidthcontenttinggi">
+                    <h6>Call us</h6>
+                    <h6>InfoLine on 136213</h6>
+                    <h6>(TIS 13 14 50)</h6>
+                    <h6>Hearing or speech impaired?</h6>
+                    <h6>Call via NRS on 133 677</h6>
+                    <h6>Visit an InfoCentre at:</h6>
+                    <h6>-Elizabeth Quay Bus Station</h6>
+                    <h6>-Perth Busport</h6>
+                    <h6>-Perth Station</h6>
+                    <h6>-Perth Undergtround Station</h6>
+                    <h6>Got an iPhone or Android device?</h6>
+                    <h6>Download our free app now to help you plan</h6>
+                    <h6>your journey.</h6>
+                    <h6>Visit us online</h6>
+                    <h6>transperth.wa.gov.au</h6>
+
+                </div>
+            </div>
+            <div class="halfcol">
+                <div class="fullwidthcontent">
+                    <h3>Routes</h3>
+                    <hr>
+                </div>
+            </div>  
+        </div>
+
+        <div class="baris">
+            <div class="blank"></div>
+            <div class="halfcol">
+                <div class="onefifthwidthcontent">
+                    <h2>81</h2>
+                </div>
+                <div class="threefifthwidthcontent">
+                    <h5>Perth - Wembley</h5>
+                    <h5>via Cambridge St</h5>
+                </div>
+                <div class="onefifthwidthcontent">
+                    <img src="Downloads/icon.png" width="50px" height="50px"></div>
+            </div>  
+        </div>
+
+        <div class="baris">
+            <div class="blank"></div>
+            <div class="halfcol">
+                <div class="onefifthwidthcontent">
+                    <h2>82</h2>
+                </div>
+                <div class="threefifthwidthcontent">
+                    <h5>Perth - Wembley</h5>
+                    <h5>via Cambridge St</h5>
+                </div>
+                <div class="onefifthwidthcontent">
+                    <img src="Downloads/icon.png" width="50px" height="50px"></div>
+            </div>  
+        </div>
+
+        <div class="baris">
+            <div class="blank"></div>
+            <div class="halfcol">
+                <div class="onefifthwidthcontent">
+                    <h2>83</h2>
+                </div>
+                <div class="threefifthwidthcontent">
+                    <h5>Perth - Wembley</h5>
+                    <h5>via Cambridge St</h5>
+                </div>
+                <div class="onefifthwidthcontent"> 
+                    <img src="Downloads/icon.png" width="50px" height="50px"></div>
+            </div>  
+        </div>
+
+
+        <div class="baris">
+            <div class="blank"></div>
+            <div class="halfcol">
+                <div class="onefifthwidthcontent">
+                    <h2>84</h2>
+                </div>
+                <div class="threefifthwidthcontent">
+                    <h5>Perth - Wembley</h5>
+                    <h5>via Cambridge St</h5>
+                </div>
+                <div class="onefifthwidthcontent"> 
+                    <img src="Downloads/icon.png" width="50px" height="50px"></div>
+            </div>  
+        </div>
+
+        <div class="baris">
+            <div class="blank"></div>
+            <div class="halfcol">
+                <div class="onefifthwidthcontent">
+                    <h2>85</h2>
+                </div>
+                <div class="threefifthwidthcontent">
+                    <h5>Perth - Wembley</h5>
+                    <h5>via Cambridge St</h5>
+                </div>
+                <div class="onefifthwidthcontent"> 
+                    <img src="Downloads/icon.png" width="50px" height="50px"></div>
+            </div>  
+        </div>
+     
+</html>
