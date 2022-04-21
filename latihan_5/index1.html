@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>Zoom Homepage</title>
+
+        <style>
+         * {
+              margin: 0;
+              padding: 0;
+        }
+
+        .desktop {
+                width: 100vw;
+                background-image: url('assets/wallpaper.jpeg');
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+        nav {
+            position: relative; 
+            width: 100%;
+            height: 80px;
+            top: 20px;
+            margin: auto;
+        }
+
+        .backgroundnav {
+            width: 95%;
+            height: 72px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+            margin: auto;
+            position: relative;
+        }
+
+        .sectionnavleft {
+            width: 30%;
+            float: left;
+        }
+
+        .sectionnavright {
+            width: 70%;
+            float: right;
+        }
+
+        #logo {
+            margin: 20px;
+            margin-left: 15%;
+            width: 140px;
+        }
+
+        .greybutton {
+            width: 25%;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            box-sizing: border-box;
+            border-radius: 28px;
+            padding: 10px;
+            margin: 10px;
+            float: right;
+            position:relative;
+            }
+
+        .bluebutton {
+            width: 25%;
+            height: 48px;
+            background: rgba(45, 140, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            box-sizing: border-box;
+            border-radius: 28px;
+            padding: 10px;
+            margin: 10px;
+            float: right;
+            position:relative;
+            margin-right: 10%;
+        }
+
+        h6 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 19.9px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        .sections {
+            width: 50%;
+            height: 70%;
+            float: left;
+        }  
+
+        .left {
+            width: 80%;
+            margin-left: 15%;
+            margin-top: 8%;
+            float: left;
+        }
+
+        .right {
+            width: 80%;
+            height: 100% !important;
+            margin-right: 15%;
+            margin-top: 64px;
+            float: right;
+        }
+
+        
+        .joinmeetpanel {
+            position: relative;    
+            width: 100%;
+            height: 174px;
+            padding: 16px;
+            padding-top: 25px;
+            margin: auto;
+            margin-top: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(10px);
+            border-radius: 50px;
+        }
+
+        h1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 34.39px;
+            line-height: 40px;
+            color: #FFFFFF;
+            padding-left: 15px;
+            padding-bottom: 5px;
+        }
+
+        .inputbox {
+            width: 100%;
+            height: 48px;
+        }
+
+        #inputbox {
+            position: relative;
+            float: left;
+            width: 78%;
+            height: 48px;
+            background: rgba(255, 255, 255, 0.5);
+            border: 1px solid #FFFFFF;
+            box-sizing: border-box;
+            border-radius: 30px;
+            margin: 10px;
+            padding: 28px;
+            font-size: 16.59px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        .startbutton {
+            position: relative;
+            float: right;
+            width: 16%;
+            height: 48px;
+            background: rgba(45, 140, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 40px;
+            padding-top: 8px;
+        }
+
+        .buttonpanel {
+                width: 100%;
+                position: relative;
+                float: left;
+            }
+
+        .loginbutton {
+                width: 65%;
+                height: 64px;
+                padding: 20px;
+                backdrop-filter: blur(10px);
+                background: rgba(45, 140, 255, 0.6);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 40px;
+                padding: 32px;
+                padding-top: 16px;
+                margin-top: 30px;
+                float: left;
+            }
+
+        h5 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: medium;
+            line-height: 28px;
+            text-align: left;
+            color: #FFFFFF;
+        }
+        .buttons {
+            width: 35%;
+            height: 64px;
+            float: right;
+            margin-top: 30px;
+        }    
+        .settingbutton {
+                width: 64px;
+                height: 64px;
+                padding: 20px;
+                position: relative;
+                background: rgba(255, 255, 255, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(10px);
+                border-radius: 50px;
+                float: right;
+                margin-right: 15%;
+                margin-left: 8%;
+            }
+        
+        .helpbutton {
+                width: 64px;
+                height: 64px;
+                padding: 20px;
+                position: relative;
+                box-sizing: border-box;
+                background: rgba(255, 255, 255, 0.3);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                backdrop-filter: blur(10px);
+                border-radius: 50px;
+                float: right;
+            }
+        
+        #settings {
+                width: 40px;
+                margin: -7px;
+            }
+
+        #help {
+                width: 80px;
+                margin: -10px;
+            }    
+
+        .loginpanel {
+                width: 100%;
+                height: 100% !important;
+                padding: 20px;
+                position: relative;
+                margin: auto;
+                background: rgba(255, 255, 255, 0.25);
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 60px;
+                backdrop-filter: blur(10px);
+        }
+
+
+
+        @media (max-width: 450px){
+            .sectionnav {
+                width: 50%;
+            }
+
+            .nav {
+                height: 56px;
+            }
+
+            .backgroundnav {
+                height: 48px;
+            }
+
+            #logo {
+                max-width: 60px;
+            }
+
+            #inputbox {
+                   font-size: 11.52px;
+                   height: 40px;
+                   padding: 10px;
+                   width: 76%;
+            }
+
+            .startbutton {
+                height: 32px;
+                padding-top: 4px;
+            }
+
+            .greybutton, .bluebutton {
+                height: 32px;
+                margin: 8px;
+                padding: 3px;
+            }
+
+            .sections {
+                width: 100%;
+                height: 42.5%;
+            }
+
+            .joinmeetpanel {
+                height: 148px;
+                margin-top: 0px;
+            }
+
+            h5, h6 {
+                font-size: 11.52px;
+            }
+
+            h1 {
+                font-size: 19.9px;
+            }
+            .left, .right {
+                width: 95%;
+            }
+
+            .left {
+                margin-left: 2.5%;
+                height: fit-content;
+            }
+
+            .right {
+                margin-right: 2.5%;
+                margin-top: 0px;
+            }
+
+            .loginbutton {
+                height: 32px;
+                padding-top: 8px;
+                padding-left: 20px;
+            }
+            
+            .settingbutton, .helpbutton {
+                height: 32px;
+                width: 32px;
+            }
+
+            .loginpanel {
+                margin-top: 0%;
+            }
+
+            #settings {
+                max-width: 30px;
+            }
+
+            #help {
+                max-width: 60px;
+            }
+        }
+
+        </style>
+
+        <script>
+            var data = []
+            var arr = []
+        </script>
+    </head>
+
+    <body>
+        <div class="desktop">
+            <nav>    
+                <div class="backgroundnav">
+                    <div class="sectionnavleft">
+                        <div id="logo">
+                            <img src="assets/zoomlogo.png" style="max-width:100%;height:auto;">
+                        </div>
+                    </div>
+                    <div class="sectionnavright">
+                        <div class="bluebutton" onclick="location.href='index2.html'">
+                            <h6>LOG IN</h6>
+                        </div>
+                        <div class="greybutton">
+                            <h6 style="font-weight: 400;">SIGN UP</h6>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="sections">
+                <div class="left">
+                    <div class="joinmeetpanel">
+                        <h1>JOIN A MEETING</h1>
+                        <div class="inputbox">
+                            <form>
+                                <input type="text" placeholder="Enter code to join a meeting" id="inputbox" name="code"><br>
+                            </form>
+                            <div class="startbutton" onclick="validateInput()">
+                                <h5 style="text-align: center;">Start</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonpanel">
+                        <div class="loginbutton" onclick="location.href='index2.html'">
+                            <h5>LOG IN to host your own meetings</h5>
+                        </div>
+                        <div class="buttons">
+                            <div class="settingbutton">
+                                <img src="assets/setting.png" style="max-width:200%;height:auto;" id="settings">
+                            </div>
+                            <div class="helpbutton">
+                                <img src="assets/help.png" style="max-width:200%;height:auto;" id="help">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sections">
+                <div class="right">
+                    <div class="loginpanel"></div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
+
+<script type="text/javascript">
+    function validateInput() {
+    
+        if(document.getElementById("inputbox").value.length == 0) {
+        alert("Please insert meeting code")}
+        else { location.href = "index4.html";}}             
+</script>
